@@ -7,7 +7,9 @@ namespace HoroscopeBot
     {
         static void Main(string[] args)
         {
-           
+            Bot bot = new Bot();
+            bot.Start();
+
         }
     }
 }
