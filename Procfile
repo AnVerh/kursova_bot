@@ -1,1 +1,1 @@
-worker: cd $HOME/heroku_output && ./MyHoroscopeBot
+worker: cd $HOME/heroku_output && ./HoroscopeBot
