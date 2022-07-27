@@ -9,6 +9,10 @@ namespace HoroscopeBot
         {
             Bot bot = new Bot();
             bot.Start();
+            while (true)
+            {
+
+            }
 
         }
     }
