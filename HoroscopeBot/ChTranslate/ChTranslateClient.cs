@@ -27,7 +27,7 @@ namespace HoroscopeBot.ChTranslate
 			var request = new HttpRequestMessage
 			{
 				Method = HttpMethod.Post,
-				RequestUri = new Uri($"https://localhost:44300/ChTranslate?fromLang={fromlang}&text={text}&to={to}"),
+				RequestUri = new Uri($"https://kursova-telegram-horoscope-api.herokuapp.com/ChTranslate?fromLang={fromlang}&text={text}&to={to}"),
 
                 Content = new StringContent(json)
                 {

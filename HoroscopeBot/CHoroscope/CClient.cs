@@ -61,7 +61,7 @@ namespace HoroscopeBot.CHoroscope
                 var request = new HttpRequestMessage
                 {
                     Method = HttpMethod.Get,
-                    RequestUri = new Uri($"https://localhost:44300/MonthlyCh?sign={sign}"),
+                    RequestUri = new Uri($"https://kursova-telegram-horoscope-api.herokuapp.com/MonthlyCh?sign={sign}"),
                 };
                 var response = await client.SendAsync(request);
                 response.EnsureSuccessStatusCode();
@@ -73,7 +73,7 @@ namespace HoroscopeBot.CHoroscope
                 var request = new HttpRequestMessage
                 {
                     Method = HttpMethod.Get,
-                    RequestUri = new Uri($"https://localhost:44300/WeeklyCh?sign={sign}"),
+                    RequestUri = new Uri($"https://kursova-telegram-horoscope-api.herokuapp.com/WeeklyCh?sign={sign}"),
                 };
                 var response = await client.SendAsync(request);
                 response.EnsureSuccessStatusCode();
@@ -85,7 +85,7 @@ namespace HoroscopeBot.CHoroscope
                 var request = new HttpRequestMessage
                 {
                     Method = HttpMethod.Get,
-                    RequestUri = new Uri($"https://localhost:44300/DailyCh?sign={sign}&day={period}"),
+                    RequestUri = new Uri($"https://kursova-telegram-horoscope-api.herokuapp.com/DailyCh?sign={sign}&day={period}"),
                 };
                 var response = await client.SendAsync(request);
                 response.EnsureSuccessStatusCode();
