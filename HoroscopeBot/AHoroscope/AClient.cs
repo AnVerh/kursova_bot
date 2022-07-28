@@ -27,7 +27,7 @@ namespace HoroscopeBot.AHoroscope
                 var request = new HttpRequestMessage
                 {
                     Method = HttpMethod.Get,
-                    RequestUri = new Uri($"https://localhost:44300/MonthlyW?sign={sign}"),
+                    RequestUri = new Uri($"https://kursova-telegram-horoscope-api.herokuapp.com/MonthlyW?sign={sign}"),
                     //Content - Type: application / json
                 };
                 var response = await client.SendAsync(request);
