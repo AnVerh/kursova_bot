@@ -40,7 +40,7 @@ namespace HoroscopeBot.AHoroscope
                 var request = new HttpRequestMessage
                 {
                     Method = HttpMethod.Get,
-                    RequestUri = new Uri($"https://localhost:44300/WeeklyW?sign={sign}"),
+                    RequestUri = new Uri($"https://kursova-telegram-horoscope-api.herokuapp.com/WeeklyW?sign={sign}"),
                 };
                 var response = await client.SendAsync(request);
                 response.EnsureSuccessStatusCode();
@@ -54,7 +54,7 @@ namespace HoroscopeBot.AHoroscope
                 var request = new HttpRequestMessage
                 {
                     Method = HttpMethod.Get,
-                    RequestUri = new Uri($"https://localhost:44300/DailyW?sign={sign}&day={engperiod}"),
+                    RequestUri = new Uri($"https://kursova-telegram-horoscope-api.herokuapp.com/DailyW?sign={sign}&day={engperiod}"),
                 };
                 var response = await client.SendAsync(request);
                 response.EnsureSuccessStatusCode();

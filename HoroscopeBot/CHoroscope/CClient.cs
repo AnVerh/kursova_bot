@@ -15,45 +15,7 @@ namespace HoroscopeBot.CHoroscope
         {
             client = new HttpClient();
         }
-        //public async Task<CModel> MonthlyHoroscope(string sign)
-        //{
-        //    var request = new HttpRequestMessage
-        //    {
-        //        Method = HttpMethod.Get,
-        //        RequestUri = new Uri($"https://localhost:44300/MonthlyCh?sign={sign}"),
-                
-        //    };
-        //    var response = await client.SendAsync(request);
-        //    response.EnsureSuccessStatusCode();
-        //    var result = await response.Content.ReadAsStringAsync();
-        //    return JsonConvert.DeserializeObject<CModel>(result);
-        //}
-        //public async Task<CModel> WeeklyHoroscope(string sign)
-        //{
-        //    var request = new HttpRequestMessage
-        //    {
-        //        Method = HttpMethod.Get,
-        //        RequestUri = new Uri($"https://localhost:44300/WeeklyCh?sign={sign}"),
-                
-        //    };
-        //    var response = await client.SendAsync(request);
-        //    response.EnsureSuccessStatusCode();
-        //    var result = await response.Content.ReadAsStringAsync();
-        //    return JsonConvert.DeserializeObject<CModel>(result);
-        //}
-        //public async Task<CModel> DailyHoroscope(string sign, string day)
-        //{
-        //    var request = new HttpRequestMessage
-        //    {
-        //        Method = HttpMethod.Get,
-        //        RequestUri = new Uri($"https://localhost:44300/DailyCh?sign={sign}&day={day}"),
-                
-        //    };
-        //    var response = await client.SendAsync(request);
-        //    response.EnsureSuccessStatusCode();
-        //    var result = await response.Content.ReadAsStringAsync();
-        //    return JsonConvert.DeserializeObject<CModel>(result);
-        //}
+       
         public async Task<CModel> GetCHoro(string sign, string period)
         {
             if(period == "місяць")
